@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "target": "esnext",
+    "moduleResolution": "node16",
+    "module": "Node16",
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "outDir": "public",
+    "lib": ["esnext", "dom"],
+    "resolveJsonModule": true
+  },
+  "exclude": ["node_modules"]
+}
