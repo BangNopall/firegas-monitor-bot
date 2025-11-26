@@ -15,10 +15,9 @@ export interface SensorData {
 const MQTT_URL = process.env.MQTT_URL || '';
 const MQTT_USERNAME = process.env.MQTT_USERNAME || '';
 const MQTT_PASSWORD = process.env.MQTT_PASSWORD || '';
-const MQTT_TOPIC_SENSOR =
-  process.env.MQTT_TOPIC_SENSOR || '/firegasmnmkel6/monitoring/sensor';
+export const MQTT_TOPIC_SENSOR = process.env.MQTT_TOPIC_SENSOR || '/firegasmnmkel6/monitoring/sensor';
 
-let client: MqttClient | null = null;
+export let client: MqttClient | null = null;
 let lastSensorData: SensorData | null = null;
 
 export const initMqtt = () => {

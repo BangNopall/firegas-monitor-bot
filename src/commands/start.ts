@@ -15,6 +15,7 @@ const start = () => async (ctx: Context) => {
     'Perintah yang tersedia:\n' +
     '/status - Lihat data sensor terbaru\n' +
     '/realtime_on - Nyalakan update realtime\n' +
+    '/realtime_on test - Nyalakan update realtime dengan dummy data\n' +
     '/realtime_off - Matikan update realtime\n';
 
   debug(`Triggered "start" command for user ${ctx.from?.id}`);

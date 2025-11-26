@@ -26,6 +26,7 @@
     "devWindows": "@powershell -Command $env:DEBUG='bot*';dotenv -- -- nodemon -e ts -x ts-node src/index.ts",
     "build": "ncc build src/index.ts -o public -m",
     "prettier": "prettier --write 'src/**/*.ts'",
+    "start": "NODE_ENV=production DEBUG=bot* dotenv -- node -r ts-node/register src/index.ts",
     "lint": "tsc --noemit"
   }
 }
